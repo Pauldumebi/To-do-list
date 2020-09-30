@@ -18,13 +18,14 @@ header {
 header,form {
    min-height: 20vh;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
 }
 
 form input, form button {
    padding: 0.5rem;
-   font-size: 2rem;
+   font-size: 1.5rem;
    border: none;
    background: white;
    display: block;
@@ -128,4 +129,15 @@ select {
    right: 0;
    padding: 1rem;
    pointer-events: none;
+}
+
+@media Screen and (max-width: 480px) {
+
+   form input {
+      width: 250px;
+      font-size: 1reem;
+   }
+   header {
+      font-size: 1rem;
+   }
 }
